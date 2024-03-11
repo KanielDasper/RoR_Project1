@@ -1,5 +1,5 @@
 <html>
-          <body>
+   <body>
     <h1>Hello, Rails!</h1>
     <p>
     This is my first attempt at setting up a Ruby on Rails server.
@@ -10,6 +10,15 @@
       <li>Dashboard for entering information into db</li>
       <li>A CSS snippet to make it pretty</li>
     </ul>
-  </body>
 
+    <h1>Articles</h1>
+
+    <ul>
+      <% @articles.each do |article| %>
+        <li>
+          <%= article.title %>
+        </li>
+      <% end %>
+    </ul>
+  </body>
 </html>
