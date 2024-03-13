@@ -11,14 +11,16 @@
       <li>A CSS snippet to make it pretty</li>
     </ul>
 
-    <h1>Articles</h1>
+  <h1>Articles</h1>
 
-    <ul>
-      <% @articles.each do |article| %>
-        <li>
-          <%= article.title %>
-        </li>
-      <% end %>
-    </ul>
-  </body>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
 </html>
