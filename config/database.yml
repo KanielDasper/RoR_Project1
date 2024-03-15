@@ -3,7 +3,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: 192.168.1.236
+  host: <%= File.read('/Users/danielkasper/credentials.txt').split("\n").detect{|line| line.start_with?('host:')}.split(':')[1].strip %>
   username: <%= File.read('/Users/danielkasper/credentials.txt').split("\n").detect{|line| line.start_with?('username:')}.split(':')[1].strip %>
   password: <%= File.read('/Users/danielkasper/credentials.txt').split("\n").detect{|line| line.start_with?('password:')}.split(':')[1].strip %>
 
