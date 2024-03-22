@@ -14,3 +14,14 @@
  *= require_self
  */
 /* Reset default browser styles */
+
+/* Inside application.css */
+@import 'custom';
+@import 'normalize';
+
+
+background: rgb(2,0,36);
+background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,85,1) 0%, rgba(0,209,255,0.7497373949579832) 57%);
+background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,85,1) 0%, rgba(0,209,255,0.7497373949579832) 57%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,85,1) 0%, rgba(0,209,255,0.7497373949579832) 57%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d1ff",GradientType=1);
